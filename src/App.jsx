@@ -31,7 +31,7 @@ const App = () => {
             </div>
           </div>
           <div className={styled.right}>
-          <img src="/portrait-young-man-isolated.png "/>
+          <img src="./assets/Image/87157069_10030620.png"/>
           </div>
         </div>
       </div>
