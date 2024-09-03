@@ -23,15 +23,18 @@ const App = () => {
           <div className={styled.left}>
             <div className={styled.bigText}>Melodies that help you stay focus</div>
             <div className={styled.smallText}>
-
+            Dive into the music, lose yourself in the game, or focus on the task at hand. Our headsets have got you covered
 </div>
             <div className={styled.emailbutton}>
-              <div className={styled.email}></div>
-              <button className={styled.button}>Get Started</button>
+              <div className={styled.email}>
+                <h4 className={styled.emailText}>Your email address</h4>
+                <input className={styled.input}></input>
+              </div>
+              <button className={styled.button1}>Get Started</button>
             </div>
           </div>
           <div className={styled.right}>
-          <img src="./assets/Image/87157069_10030620.png"/>
+          {/* <img src="./assets/Image/87157069_10030620.png"/> */}
           </div>
         </div>
       </div>

@@ -33,12 +33,102 @@ border-radius: 20px;
 }
 .heroContainer{
   width: 100%;
-  height: 720px;
+ 
   display: flex;
+  justify-content: center;
+  background-color: rgb(250, 250, 203);
 }
-@media (max-width: 600px) {
+.herowrapper{
+  width: 90%;
+  height: calc(100vh - 70px);
+  /* flex-wrap: wrap; */
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.left{
+  width: 44%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+.bigText{
+  width: 310px;
+  font-size: 45px;
+  font-weight: bold;
+  color: rgb(68, 68, 68);
+  font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.smallText{
+  width: 330px;
+  font-size: 15px;
+}
+.right{
+  width: 46%;
+  height: 100%;
+  background-image: url(./assets/Image/portrait-young-man-isolated.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.emailbutton{
+  /* width: 90%; */
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.email{
+margin-left: 10px;
+}
+.emailText{
+  font-size: 13px;
+}
+.input{
+  border: none;
+  width: 250px;
+  height: 30px;
+  background-color: rgba(243, 249, 249, 0.416);
+  border-radius: 20px;
+}
+.button1{
+  background-color: gold;
+  padding: 15px 30px;
+  border: 0px;
+  border-radius: 20px;
+  }
+
+@media (max-width: 600px){
   .navHolder{
     display: none;
   }
-  
+  .herowrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .right{
+    width: 100%;
+  }
+  .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .bigText{
+    font-size: 31px;
+  }
+  .smallText{
+    font-size: 14px;
+  }
 }
